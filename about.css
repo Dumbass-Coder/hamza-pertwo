@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: rgb(189, 145, 65);
+}
+
+.header ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.header ul li {
+
+    margin: 3.76rem 0rem;
+    list-style: none;
+}
+
+.header li a {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 0.2rem solid;
+    border-radius: 1rem;
+}
+
+.header li a:hover {
+    background-color: rgb(189, 145, 65);
+    color: white;
+}
+
+
+.header {
+    position: absolute;
+    background-color: rgb(77, 16, 16);
+    height: 100%;
+    width: 12rem;
+    transition: transform 4ms;
+
+}
+
+.header {
+    position: fixed;
+
+    grid-area: header;
+    transition: transform 0.3s ease-in;
+}
+
+.headergo {
+    transform: translate(-200px, 0px);
+    position: absolute;
+}
+
+.img {
+    position: fixed;
+    cursor: pointer;
+    height: 1.5rem;
+    width: 1.5rem;
+    top: 0.4rem;
+    left: 0.5rem;
+    border-radius: 0.3rem;
+}
+
+#cross {
+    position: fixed;
+    left: 9rem;
+    top: 1.rem;
+
+}
+
+.main {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: main;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 39rem;
+    justify-content: space-evenly;
+}
+
+.main ul {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+}
+
+.main li {
+    list-style: none;
+}
+.main li a{
+    list-style: none;
+}
+
+.main li a img {
+    height: 4rem;
+    width: 4rem;
+    margin: 1rem 1rem;
+    border-radius: 3rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header main main main'
+        'header main main main'
+        'header main main main'
+    ;
+}
+
+.main h1,
+h2 {
+    color: rgb(77, 16, 16);
+    font-weight: bold;
+    display: block;
+    text-align: left;
+}
+
+.main p {
+    color: rgb(77, 16, 16);
+    font-weight: bold;
+    display: block;
+    text-align: left;
+}

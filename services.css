@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+    background-color: rgb(189, 145, 65);
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+ul li {
+
+    margin: 3.76rem 0rem;
+    list-style: none;
+}
+
+li a {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 0.2rem solid;
+    border-radius: 1rem;
+}
+
+li a:hover {
+    background-color: rgb(189, 145, 65);
+    color: white;
+}
+
+
+.header {
+    position: absolute;
+    background-color: rgb(77, 16, 16);
+    height: 100%;
+    width: 12rem;
+    transition: transform 4ms;
+
+}
+
+.header {    position: fixed;
+
+    grid-area: header;
+    transition: transform 0.3s ease-in;
+}
+
+.headergo {
+    transform: translate(-200px, 0px);
+    position: absolute;
+}
+
+.img {
+    position: fixed;
+    cursor: pointer;
+    height: 1.5rem;
+    width: 1.5rem;
+    top: 0.4rem;
+    left: 0.5rem;
+    border-radius: 0.3rem;
+}
+
+#cross {
+    position: fixed;
+    left: 9rem;
+    top: 1.rem;
+
+}
+.main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    grid-area: main;
+    align-items: center;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header main main main'
+        'header main main main'
+        'header main main main'
+    ;
+}
+.service-img{
+    height: 7rem;
+    width: 14rem;
+    border-radius: 2rem;
+    margin: 2rem 0rem;
+    border: 2px dotted;
+}
+.main h1,h2{
+    color:  rgb(77, 16, 16);
+    font-weight: bold;
+    border-bottom: 2px dotted;
+}
